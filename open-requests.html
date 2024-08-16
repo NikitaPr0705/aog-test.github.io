@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+
+  <body></body>
+</html>
+
+<main>
+    <section class="main">
+   <nav class="sidebar hidden">
+     <header>
+       <div class="header-image">
+         <img
+           class="logo-header"
+           src="images/main-logo-header.svg"
+           alt="sidebar logo"
+           class="sidebar__logo"
+         />
+         <a class="logo-header-text hidden" href="index.html">
+           <img
+            
+             src="images/main-logo-header-text.svg"
+             alt="sidebar logo"
+             class="sidebar__logo"
+           />
+         </a>
+       </div>
+   
+       <div class="burger" id="burger">
+         <div class="burger-line"></div>
+         <div class="burger-line"></div>
+         <div class="burger-line"></div>
+     </div>
+     </header>
+     <div class="menu-bar">
+       <div class="menu">
+         <ul class="menu-links">
+           <li class="nav-link">
+             <a href="#">
+               <img src="images/menu-item-10.svg" alt="menu item icon" />
+               <span class="text nav-text">Demo View</span>
+             </a>
+           </li>
+           <li class="nav-link">
+             <a href="orders.html">
+               <img src="images/menu-item-2.svg" alt="menu item icon" />
+               <span class="text nav-text">Orders</span>
+             </a>
+           </li>
+           <li class="nav-link">
+             <a href="clients-list.html">
+               <img src="images/menu-item-3.svg" alt="menu item icon" />
+               <span class="text nav-text">Clients</span>
+             </a>
+           </li>
+           <li class="nav-link">
+             <a href="messages.html">
+               <!-- <img src="images/menu-item-4.svg" alt="menu item icon" /> -->
+               <img class="new-message-icon" src="images/menu-item-4-new-message.svg" alt="menu item icon" />
+               <span class="text nav-text">Messages</span>
+             </a>
+           </li>
+         </ul>
+   
+         <ul class="menu-links">
+           <li class="nav-link">
+             <a class="open-modal" data-micromodal-trigger="modal-profile-info" value="open" href="#">
+               <img src="images/menu-item-5.svg" alt="menu item icon" />
+               <span class="text nav-text">My Profile</span>
+             </a>
+           </li>
+           <li class="nav-link">
+             <a href="#">
+               <img src="images/menu-item-6.svg" alt="menu item icon" />
+               <span class="text nav-text">About</span>
+             </a>
+           </li>
+           <li class="nav-link">
+             <a class="open-modal" data-micromodal-trigger="modal-profile-settings" value="open" href="#">
+               <img src="images/menu-item-7.svg" alt="menu item icon" />
+               <span class="text nav-text">Settings</span>
+             </a>
+           </li>
+           <li class="nav-link">
+             <a href="#">
+               <img src="images/menu-item-10.svg" alt="menu item icon" />
+               <span class="text nav-text">Demo View</span>
+             </a>
+           </li>
+           <li class="nav-link">
+             <a  class="open-modal" data-micromodal-trigger="modal-support" value="open" href="#">
+               <img src="images/menu-item-9.svg" alt="menu item icon" />
+               <span class="text nav-text">Help</span>
+             </a>
+   
+           </li>
+         </ul>
+       </div>
+       <div class="bottom-content">
+         <div class="sidebar-bottom">
+           <!-- Logged Out  -->
+   
+           <div class="inner-wrapper logged-out">
+             <div class="cabinet cabinet-opened">
+               <button class="btn sign-up-btn secondary-btn open-modal" data-micromodal-trigger="modal-create-acc" value="open">Sign Up</button>
+               <button class="btn sign-in-btn primary-btn open-modal" data-micromodal-trigger="modal-login" value="open">Sign In</button>
+             </div>
+             <a href="#" class="cabinet cabinet-closed">
+               <img src="images/cabinet-logout.svg" alt="logout icon" />
+             </a>
+           </div>
+   
+           <!-- Logged Out  -->
+   
+           <!-- Logged In  -->
+           <!-- <div class="inner-wrapper logged-in">
+             <div class="cabinet cabinet-opened">
+               <div class="wrapper">
+                 <img class="user-icon" src="images/user-icon.svg" alt="user icon" />
+     
+                 <div class="user-info">
+                   <p class="user-name">UserName{email if empty}</p>
+                   <p class="user-email">email_address@gmail.com</p>
+                 </div>
+               </div>
+               <img class="logout-icon" src="images/cabinet-logout.svg" alt="logout icon" />
+             </div>
+             <a href="#" class="cabinet cabinet-closed">
+               <img src="images/cabinet-logout.svg" alt="logout icon" />
+             </a>
+           </div> -->
+           <!-- Logged In  -->
+         </div>
+       
+       </div>
+     </div>
+     
+   </nav>
+   
+      <div class="container">
+        <div class="main-section">
+          <h1 class="page-title"> <a href="#">Clients</a> <span><img src="images/arrow.svg" alt="arrow"></span> Etihad</h1>
+          <div class="tab-box">
+            <button class="tab__btn active">Open Requests <span class="counter">3</span></button>
+            <button class="tab__btn">Closed requests <span class="counter">12</span></button>
+            <div class="line"></div>
+          </div>
+  
+          <div class="content-box">
+            <div class="content active">
+             <div class="cards-list">
+  
+              <div class="card">
+                <picture>
+                  <img src="images/card-image.svg" alt="card image">
+                </picture>
+                <div class="card__info grid-cols">
+                  <div class="card__info-item">
+                    <div class="info-wrapper">
+                    <h4 class="item-title">Date</h4>
+                    <p class="item-text">11.07.2024</p>
+                  </div>
+                  </div>
+                  <div class="card__info-item">
+                    <div class="info-wrapper">
+                    <h4 class="item-title">Description</h4>
+                    <p class="item-text">Rolls-Royce engine</p>
+                  </div>
+                  </div>
+                  <div class="card__info-item">
+                    <div class="info-wrapper">
+                    <h4 class="item-title">place for delivery</h4>
+                    <p class="item-text">Munich</p>
+                  </div>
+                  </div>
+                  <div class="card__info-item price-item">
+                    <div class="info-wrapper">
+                    <h4 class="item-title">Price</h4>
+                    <p class="item-text">99,518,145 €</p>
+                  </div>
+                  </div>
+                  <div class="card__info-item notes hidden">
+                    <div class="info-wrapper">
+                    <h4 class="item-title">Notes</h4>
+                    <p class="item-text">Should be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. Quam in neque sed donec massa sit at pharetra cras.Should be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. QuamShould be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. QuamShould be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. QuamShould be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. Quam</p>
+                  </div>
+                  </div>
+                  <div class="card__info-item hidden">
+                    <div class="info-wrapper">
+                    <h4 class="item-title">Quantity</h4>
+                    <p class="item-text">2</p>
+                  </div>
+                  </div>
+              </div>
+  
+              <div class="card__buttons">
+                <button class="btn btn--border open-card button-hide"><img src="images/plus-icon.svg" alt="Details icon"> Details</button>
+                <button class="btn btn--border d-toggle no-event"><img src="images/conversation-icon.svg" alt="Conversation icon"> Conversation</button>
+                <button class="btn btn--border color--red d-toggle close-card"><img src="images/cancel-icon.svg" alt="Cancel icon"> Cancel</button>
+              </div>
+             </div>
+
+             <div class="card">
+              <picture>
+                <img src="images/card-image.svg" alt="card image">
+              </picture>
+              <div class="card__info grid-cols">
+                <div class="card__info-item">
+                  <div class="info-wrapper">
+                  <h4 class="item-title">Date</h4>
+                  <p class="item-text">11.07.2024</p>
+                </div>
+                </div>
+                <div class="card__info-item">
+                  <div class="info-wrapper">
+                  <h4 class="item-title">Description</h4>
+                  <p class="item-text">Rolls-Royce engine</p>
+                </div>
+                </div>
+                <div class="card__info-item">
+                  <div class="info-wrapper">
+                  <h4 class="item-title">place for delivery</h4>
+                  <p class="item-text">Munich</p>
+                </div>
+                </div>
+                <div class="card__info-item price-item">
+                  <div class="info-wrapper">
+                  <h4 class="item-title">Price</h4>
+                  <p class="item-text">99,518,145 €</p>
+                </div>
+                </div>
+                <div class="card__info-item notes hidden">
+                  <div class="info-wrapper">
+                  <h4 class="item-title">Notes</h4>
+                  <p class="item-text">Should be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. Quam in neque sed donec massa sit at pharetra cras.Should be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. QuamShould be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. QuamShould be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. QuamShould be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. Quam</p>
+                </div>
+                </div>
+                <div class="card__info-item hidden">
+                  <div class="info-wrapper">
+                  <h4 class="item-title">Quantity</h4>
+                  <p class="item-text">2</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="card__buttons">
+              <button class="btn btn--border open-card button-hide"><img src="images/plus-icon.svg" alt="Details icon"> Details</button>
+              <button class="btn btn--border d-toggle no-event"><img src="images/conversation-icon.svg" alt="Conversation icon"> Conversation</button>
+              <button class="btn btn--border color--red d-toggle close-card"><img src="images/cancel-icon.svg" alt="Cancel icon"> Cancel</button>
+            </div>
+           </div>
+
+           <div class="card">
+            <picture>
+              <img src="images/card-image.svg" alt="card image">
+            </picture>
+            <div class="card__info grid-cols">
+              <div class="card__info-item">
+                <div class="info-wrapper">
+                <h4 class="item-title">Date</h4>
+                <p class="item-text">11.07.2024</p>
+              </div>
+              </div>
+              <div class="card__info-item">
+                <div class="info-wrapper">
+                <h4 class="item-title">Description</h4>
+                <p class="item-text">Rolls-Royce engine</p>
+              </div>
+              </div>
+              <div class="card__info-item">
+                <div class="info-wrapper">
+                <h4 class="item-title">place for delivery</h4>
+                <p class="item-text">Munich</p>
+              </div>
+              </div>
+              <div class="card__info-item price-item">
+                <div class="info-wrapper">
+                <h4 class="item-title">Price</h4>
+                <p class="item-text">99,518,145 €</p>
+              </div>
+              </div>
+              <div class="card__info-item notes hidden">
+                <div class="info-wrapper">
+                <h4 class="item-title">Notes</h4>
+                <p class="item-text">Should be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. Quam in neque sed donec massa sit at pharetra cras.Should be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. QuamShould be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. QuamShould be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. QuamShould be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. Quam</p>
+              </div>
+              </div>
+              <div class="card__info-item hidden">
+                <div class="info-wrapper">
+                <h4 class="item-title">Quantity</h4>
+                <p class="item-text">2</p>
+              </div>
+              </div>
+          </div>
+
+          <div class="card__buttons">
+            <button class="btn btn--border open-card button-hide"><img src="images/plus-icon.svg" alt="Details icon"> Details</button>
+            <button class="btn btn--border d-toggle no-event"><img src="images/conversation-icon.svg" alt="Conversation icon"> Conversation</button>
+            <button class="btn btn--border color--red d-toggle close-card"><img src="images/cancel-icon.svg" alt="Cancel icon"> Cancel</button>
+          </div>
+         </div>
+
+         <div class="card">
+          <picture>
+            <img src="images/card-image.svg" alt="card image">
+          </picture>
+          <div class="card__info grid-cols">
+            <div class="card__info-item">
+              <div class="info-wrapper">
+              <h4 class="item-title">Date</h4>
+              <p class="item-text">11.07.2024</p>
+            </div>
+            </div>
+            <div class="card__info-item">
+              <div class="info-wrapper">
+              <h4 class="item-title">Description</h4>
+              <p class="item-text">Rolls-Royce engine</p>
+            </div>
+            </div>
+            <div class="card__info-item">
+              <div class="info-wrapper">
+              <h4 class="item-title">place for delivery</h4>
+              <p class="item-text">Munich</p>
+            </div>
+            </div>
+            <div class="card__info-item price-item">
+              <div class="info-wrapper">
+              <h4 class="item-title">Price</h4>
+              <p class="item-text">99,518,145 €</p>
+            </div>
+            </div>
+            <div class="card__info-item notes hidden">
+              <div class="info-wrapper">
+              <h4 class="item-title">Notes</h4>
+              <p class="item-text">Should be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. Quam in neque sed donec massa sit at pharetra cras.Should be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. QuamShould be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. QuamShould be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. QuamShould be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. Quam</p>
+            </div>
+            </div>
+            <div class="card__info-item hidden">
+              <div class="info-wrapper">
+              <h4 class="item-title">Quantity</h4>
+              <p class="item-text">2</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="card__buttons">
+          <button class="btn btn--border open-card button-hide"><img src="images/plus-icon.svg" alt="Details icon"> Details</button>
+          <button class="btn btn--border d-toggle no-event"><img src="images/conversation-icon.svg" alt="Conversation icon"> Conversation</button>
+          <button class="btn btn--border color--red d-toggle close-card"><img src="images/cancel-icon.svg" alt="Cancel icon"> Cancel</button>
+        </div>
+       </div>
+  
+         
+
+            </div>
+          </div>
+          <div class="content closed-requests">
+            <div class="cards-list">
+  
+              <div class="card">
+                <picture>
+                  <img src="images/card-image.svg" alt="card image">
+                </picture>
+                <div class="card__info grid-cols">
+                  <div class="card__info-item">
+                    <div class="info-wrapper">
+                    <h4 class="item-title">Date</h4>
+                    <p class="item-text">11.07.2024</p>
+                  </div>
+                  </div>
+                  <div class="card__info-item">
+                    <div class="info-wrapper">
+                    <h4 class="item-title">Description</h4>
+                    <p class="item-text">Rolls-Royce engine</p>
+                  </div>
+                  </div>
+                  <div class="card__info-item">
+                    <div class="info-wrapper">
+                    <h4 class="item-title">place for delivery</h4>
+                    <p class="item-text">Munich</p>
+                  </div>
+                  </div>
+                  <div class="card__info-item price-item">
+                    <div class="info-wrapper">
+                    <h4 class="item-title">Price</h4>
+                    <p class="item-text">99,518,145 €</p>
+                  </div>
+                  </div>
+                  <div class="card__info-item notes hidden">
+                    <div class="info-wrapper">
+                    <h4 class="item-title">Notes</h4>
+                    <p class="item-text">Should be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. Quam in neque sed donec massa sit at pharetra cras.Should be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. QuamShould be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. QuamShould be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. QuamShould be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. Quam</p>
+                  </div>
+                  </div>
+                  <div class="card__info-item hidden">
+                    <div class="info-wrapper">
+                    <h4 class="item-title">Quantity</h4>
+                    <p class="item-text">2</p>
+                  </div>
+                  </div>
+              </div>
+  
+             </div>
+  
+           </div>
+         </div>
+    
+        </div>
+        <div class="bottom-logo">
+            <picture>
+                <img src="images/aog_footer-logo.svg" alt="bottom logo" />
+            </picture>
+        </div>
+      </div>
+    </section>
+  </main>
+    <footer class="footer">
+      <div class="container">
+    
+      </div>
+    </footer>
+    
+      <!-- Modal -->
+      <div class="modal micromodal-slide" id="modal-create-acc" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    
+             <!-- Create a free account! -->
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-create-acc-title">
+          <button class="close-modal" data-micromodal-close="modal-create-acc" value="close"><img src="images/close-icon.svg" alt="close icon"></button>
+          <header class="modal__header">
+              <h2 class="modal__title" id="modal-create-acc-title">
+                Create a free account!
+              </h2>
+          </header>
+          <main class="modal__content" id="modal-create-acc-content">
+    
+              <div class="form-block">
+                  <form class="form" action="#" method="post" id="form-create-acc" autocomplete="off">
+                    <div class="radio-box">
+                      <label for="buyer">
+                      <input class="custom-radio" type="radio" name="user" id="buyer" checked><span></span> I’m a buyer</label>
+                      <label for="seller">
+                      <input class="custom-radio" type="radio" name="user" id="seller"><span></span> I’m a seller</label>
+                    </div>
+                    <div class="email input-block">
+                      <label class="form-label" for="email-create-acc">Email address</label>
+                      <div class="input-wrapper">
+                        <input type="email" id="email-create-acc" name="email" placeholder="Enter your email" autocomplete="off">
+                      </div>
+                    </div>
+                    <div class="password input-block">
+                      <label class="form-label" for="password-1">Password </label>
+                      <div class="input-wrapper">
+                        <input type="password" id="password-1" name="password" placeholder="Enter your password" autocomplete="off">
+                        <span class="toggle-password"></span>
+                      </div>
+                    </div>
+                    <div class="repeat-password password input-block">
+                      <label class="form-label" for="repeat-password-create-acc">Repeat password </label>
+                      <div class="input-wrapper">
+                        <input type="password" id="repeat-password-create-acc" name="password" placeholder="Repeat your password" autocomplete="off">
+                        <span class="toggle-password"></span>
+                      </div>
+                    </div>
+                    <div class="phone input-block">
+                      <label class="form-label" for="phone-create-acc">Phone</label>
+                      <div class="input-wrapper">
+                        <input type="text" id="phone-create-acc" name="phone" placeholder="Enter phone number" autocomplete="off">
+                      </div>
+                    </div>
+                
+                    <div class="form-footer">
+                        <button class="btn secondary-btn form__submit" type="submit" value="Register">Register</button>
+                      <div class="form-footer__text">
+                        <p class="text">Already have an account? <a class="open-modal" data-micromodal-trigger="modal-login" value="open" href="#">Sign-In</a> instead.</p>
+                      </div>
+                    </div>
+                  </form>
+              </div>
+          </main>
+        </div>
+        <!-- Create a free account! -->
+    
+    </div>
+    </div>
+    <!-- Modal -->
+    
+      <!-- Modal -->
+      <div class="modal micromodal-slide" id="modal-login" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    
+            <!-- Login -->
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-login-title">
+          <button class="close-modal" data-micromodal-close="modal-login" value="close"><img src="images/close-icon.svg" alt="close icon"></button>
+          <header class="modal__header">
+              <h2 class="modal__title" id="modal-login-title">
+                Login
+              </h2>
+          </header>
+          <main class="modal__content" id="modal-login-content">
+    
+              <div class="form-block">
+                  <form class="form" action="#" method="post" id="form-login" autocomplete="off">
+    
+                    <div class="email input-block">
+                      <label class="form-label" for="email-login">Email address</label>
+                      <div class="input-wrapper">
+                        <input type="email" id="email-login" name="email" placeholder="Enter your email" autocomplete="off">
+                      </div>
+                    </div>
+                    <div class="password input-block">
+                      <label class="form-label" for="password-2">Password </label>
+                      <div class="input-wrapper">
+                        <input type="password" id="password-2" name="password" placeholder="Enter your password" autocomplete="off">
+                        <span class="toggle-password"></span>
+                      </div>
+                    </div>
+                    <div class="form-footer">
+                        <button class="btn secondary-btn form__submit" type="submit" value="Log-In">Log-In</button>
+                      <div class="form-footer__text">
+                        <p class="text">Don’t have an account? <a class="open-modal" data-micromodal-trigger="modal-create-acc" value="open" href="#">Sign-Up</a> instead.</p>
+                      </div>
+                    </div>
+                  </form>
+              </div>
+          </main>
+        </div>
+         <!-- Login -->
+    
+    </div>
+    </div>
+    <!-- Modal -->
+    
+      
+      <!-- Modal -->
+      <div class="modal micromodal-slide" id="modal-profile-info" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    
+         <!-- Profile information -->
+    
+         <div class="modal__container modal--bigger" role="dialog" aria-modal="true" aria-labelledby="modal-profile-info-title">
+          <button class="close-modal" data-micromodal-close="modal-profile-info" value="close"><img src="images/close-icon.svg" alt="close icon"></button>
+          <header class="modal__header">
+              <h2 class="modal__title" id="modal-profile-info-title">
+                Profile information
+              </h2>
+          </header>
+          <main class="modal__content" id="modal-profile-info-content">
+    
+              <div class="form-block">
+                  <form class="form" action="#" method="post" id="form-profile-info" autocomplete="off">
+                    <div class="form-col-2">     
+                      <div class=" input-block">
+                      <label class="form-label" for="name">Name</label>
+                      <div class="input-wrapper">
+                        <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="off">
+                      </div>
+                    </div>
+                    <div class="email input-block">
+                      <label class="form-label" for="surname">Surname</label>
+                      <div class="input-wrapper">
+                        <input type="text" id="surname" name="surname" placeholder="Enter your surname" autocomplete="off">
+                      </div>
+                    </div>
+    
+                    </div>
+    
+                    <div class="email input-block">
+                      <label class="form-label" for="company-name">Company name</label>
+                      <div class="input-wrapper">
+                        <input type="text" id="company-name" name="company name" placeholder="Enter your company name" autocomplete="off">
+                      </div>
+                    </div>
+                    
+                    <div class="form-col-2">     
+                      <div class="phone input-block">
+                      <label class="form-label" for="phone-profile-info">Phone</label>
+                      <div class="input-wrapper">
+                        <input type="text" id="phone-profile-info" name="phone" placeholder="Enter phone number" autocomplete="off">
+                      </div>
+                    </div>
+                    <div class="email input-block">
+                      <label class="form-label" for="email-profile-info">Email address</label>
+                      <div class="input-wrapper">
+                        <input type="email" id="email-profile-info" name="email" placeholder="Enter your email" autocomplete="off">
+                      </div>
+                    </div>
+                    </div>
+                    <div class="input-block upload-file-block">
+                      <div class="upload-text">
+                        <img src="images/clip.svg" alt="Image">
+                        <p>Upload your company logo</p>
+                      </div>
+                      <div class="custom-file-upload">
+                        <label for="file" class="custom-file-label">
+                          <span class="plus-icon"><img src="images/plus.svg" alt="upload icon"></span> Upload
+                        </label>
+                        <input type="file" name="file" id="file" />
+                      </div>
+                      
+                      <p class="upload-info">maximum size 500x500px, 1 Mb</p>
+                    </div>
+               
+                    <div class="form-footer">
+                        <button class="btn secondary-btn form__submit" type="submit" value="Save changes">Save changes</button>
+                  
+                    </div>
+                  </form>
+              </div>
+          </main>
+        </div>
+          
+        <!-- Profile information -->
+    
+    </div>
+    </div>
+    <!-- Modal -->
+    
+     <!-- Modal -->
+     <div class="modal micromodal-slide" id="modal-profile-settings" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    
+        <!-- Profile Settings -->
+    
+        <div class="modal__container modal--bigger" role="dialog" aria-modal="true" aria-labelledby="modal-profile-settings-title">
+          <button class="close-modal" data-micromodal-close="modal-profile-settings" value="close"><img src="images/close-icon.svg" alt="close icon"></button>
+          <header class="modal__header">
+              <h2 class="modal__title" id="modal-profile-settings-title">
+                Profile Settings
+              </h2>
+          </header>
+          <main class="modal__content" id="modal-profile-settings-content">
+    
+              <div class="form-block">
+                  <form class="form" action="#" method="post" id="form-profile-settings" autocomplete="off">
+                      <div class="currency input-block">
+                      <label class="form-label" for="currency">Select your currency</label>
+                      <div class="input-wrapper select-wrapper">
+                        <select class="form-selector">
+                          <option value="0">Select currency:</option>
+                          <option value="United States Dollar (USD, $)">United States Dollar (USD, $)</option>
+                          <option value="Euro (EUR, €)">Euro (EUR, €)</option>
+                          <option value="Japanese Yen (JPY, ¥)">Japanese Yen (JPY, ¥)</option>
+                          <option value="Canadian Dollar (CAD, $)">Canadian Dollar (CAD, $)</option>
+                          <option value="Australian Dollar (AUD, $)">Australian Dollar (AUD, $)</option>
+                          <option value="Swiss Franc (CHF, CHF)">Swiss Franc (CHF, CHF)</option>
+                          <option value="Chinese Yuan (CNY, ¥)">Chinese Yuan (CNY, ¥)</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-footer">
+                        <button class="btn secondary-btn form__submit" type="submit" value="Save changes">Save changes</button>
+                    </div>
+                  </form>
+              </div>
+          </main>
+        </div>
+       
+        <!-- Profile Settings -->
+    
+    </div>
+    </div>
+    <!-- Modal -->
+    
+     <!-- Modal -->
+     <div class="modal micromodal-slide" id="modal-support" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    
+       <!-- Support -->
+          
+         <div class="modal__container modal--bigger" role="dialog" aria-modal="true" aria-labelledby="modal-support-title">
+          <button class="close-modal" data-micromodal-close="modal-support" value="close"><img src="images/close-icon.svg" alt="close icon"></button>
+          <header class="modal__header">
+            
+              <h2 class="modal__title" id="modal-support-title">
+                Support
+              </h2>
+              <p class="modal__subtitle">If you have any questions, please, contact us:</p>
+          </header>
+          <main class="modal__content" id="modal-support-content">
+    
+              <div class="links-block">
+                <div class="link-wrapper">
+                  <img src="images/phone-icon.svg" alt="phone icon">
+                <a href="tel:+1(123) 525 1234">+1(123) 525 1234</a>
+              </div>
+              <div class="link-wrapper">
+                <img src="images/mail-icon.svg" alt="mail icon">
+                <a href=mailto:“support@aog.today”>support@aog.today</a>
+              </div>
+              </div>
+              <div class="whatsapp-contact">
+                <a href="#">
+                  <img src="images/whatsapp-icon.svg" alt="whatsapp icon">
+                </a>
+              </div>
+    
+          </main>
+        </div>
+    
+          <!-- Support -->
+    
+    </div>
+    </div>
+    <!-- Modal -->
+    
+    
+      <!-- Modal -->
+      <div class="modal micromodal-slide modal--clean" id="modal-send-message" aria-hidden="true">
+        <div class="modal__overlay bg-black-05" tabindex="-1" data-micromodal-close>
+    
+         <!--To send a message, add the contact to your contact list -->
+            
+           <div class="modal__container" role="dialog" aria-modal="true" >
+    
+            <button class="close-modal" data-micromodal-close="modal-send-message" value="close"><img src="images/close-icon.svg" alt="close icon"></button>
+                <h2 class="modal__title">
+                    To send a message, add the contact to your contact list
+                </h2>
+    
+            <main class="modal__content mt-30">
+      
+                <button class="btn secondary-btn mw-200 open-modal" data-micromodal-trigger="modal-contact-added" value="open"><img src="images/plus-white-icon.svg" alt="add icon">Add to contact list</button>
+    
+            </main>
+          </div>
+    
+            <!-- To send a message, add the contact to your contact list -->
+    
+               <!-- Your quote has been accepted -->
+            
+           <!-- <div class="modal__container" role="dialog" aria-modal="true" >
+            <button class="close-modal" data-micromodal-close="modal-buyer-seller" value="close"><img src="images/close-icon.svg" alt="close icon"></button>
+            <h2 class="modal__title">
+                Your quote has been accepted
+            </h2>
+    
+      </div> -->
+    
+        <!-- Your quote has been accepted -->
+    
+             <!-- The contact has been added to your contact list -->
+            
+             <!-- <div class="modal__container" role="dialog" aria-modal="true" >
+                <button class="close-modal" data-micromodal-close="modal-buyer-seller" value="close"><img src="images/close-icon.svg" alt="close icon"></button>
+                <h2 class="modal__title">
+                    The contact has been added to your contact list
+                    
+                </h2>
+        
+          </div> -->
+        
+            <!-- The contact has been added to your contact list -->
+    
+                <!-- Your quote has been sent -->
+            
+           <!-- <div class="modal__container" role="dialog" aria-modal="true" >
+            <button class="close-modal" data-micromodal-close="modal-buyer-seller" value="close"><img src="images/close-icon.svg" alt="close icon"></button>
+            <h2 class="modal__title">
+                Your quote has been sent
+            </h2>
+    
+      </div> -->
+    
+        <!-- Your quote has been sent -->
+    
+            
+    
+    </div>
+    </div>
+    <!-- Modal -->
+    
+      <!-- Modal -->
+      <div class="modal micromodal-slide modal--clean" id="modal-accept-quote" aria-hidden="true">
+        <div class="modal__overlay bg-black-05" tabindex="-1" data-micromodal-close>
+    
+         <!--To send a message, add the contact to your contact list -->
+            
+           <!-- <div class="modal__container" role="dialog" aria-modal="true" >
+    
+            <button class="close-modal" data-micromodal-close="modal-send-message" value="close"><img src="images/close-icon.svg" alt="close icon"></button>
+                <h2 class="modal__title">
+                    To send a message, add the contact to your contact list
+                </h2>
+    
+            <main class="modal__content mt-30">
+      
+                <button class="btn secondary-btn mw-200"><img src="images/plus-white-icon.svg" alt="add icon">Add to contact list</button>
+    
+            </main>
+          </div> -->
+    
+            <!-- To send a message, add the contact to your contact list -->
+    
+               <!-- Your quote has been accepted -->
+            
+           <div class="modal__container" role="dialog" aria-modal="true" >
+            <button class="close-modal" data-micromodal-close="modal-accept-quote" value="close"><img src="images/close-icon.svg" alt="close icon"></button>
+            <h2 class="modal__title">
+                Your quote has been accepted
+            </h2>
+    
+      </div>
+    
+        <!-- Your quote has been accepted -->
+    
+             <!-- The contact has been added to your contact list -->
+            
+             <!-- <div class="modal__container" role="dialog" aria-modal="true" >
+                <button class="close-modal" data-micromodal-close="modal-buyer-seller" value="close"><img src="images/close-icon.svg" alt="close icon"></button>
+                <h2 class="modal__title">
+                    The contact has been added to your contact list
+                    
+                </h2>
+        
+          </div> -->
+        
+            <!-- The contact has been added to your contact list -->
+    
+                <!-- Your quote has been sent -->
+            
+           <!-- <div class="modal__container" role="dialog" aria-modal="true" >
+            <button class="close-modal" data-micromodal-close="modal-buyer-seller" value="close"><img src="images/close-icon.svg" alt="close icon"></button>
+            <h2 class="modal__title">
+                Your quote has been sent
+            </h2>
+    
+      </div> -->
+    
+        <!-- Your quote has been sent -->
+    
+            
+    
+    </div>
+    </div>
+    <!-- Modal -->
+    
+    
+      <!-- Modal -->
+      <div class="modal micromodal-slide modal--clean" id="modal-contact-added" aria-hidden="true">
+        <div class="modal__overlay bg-black-05" tabindex="-1" data-micromodal-close>
+    
+         <!--To send a message, add the contact to your contact list -->
+            
+           <!-- <div class="modal__container" role="dialog" aria-modal="true" >
+    
+            <button class="close-modal" data-micromodal-close="modal-send-message" value="close"><img src="images/close-icon.svg" alt="close icon"></button>
+                <h2 class="modal__title">
+                    To send a message, add the contact to your contact list
+                </h2>
+    
+            <main class="modal__content mt-30">
+      
+                <button class="btn secondary-btn mw-200"><img src="images/plus-white-icon.svg" alt="add icon">Add to contact list</button>
+    
+            </main>
+          </div> -->
+    
+            <!-- To send a message, add the contact to your contact list -->
+    
+               <!-- Your quote has been accepted -->
+            
+           <!-- <div class="modal__container" role="dialog" aria-modal="true" >
+            <button class="close-modal" data-micromodal-close="modal-accept-quote" value="close"><img src="images/close-icon.svg" alt="close icon"></button>
+            <h2 class="modal__title">
+                Your quote has been accepted
+            </h2>
+    
+      </div> -->
+    
+        <!-- Your quote has been accepted -->
+    
+             <!-- The contact has been added to your contact list -->
+            
+             <div class="modal__container" role="dialog" aria-modal="true" >
+                <button class="close-modal" data-micromodal-close="modal-contact-added" value="close"><img src="images/close-icon.svg" alt="close icon"></button>
+                <h2 class="modal__title">
+                    The contact has been added to your contact list
+                    
+                </h2>
+        
+          </div>
+        
+            <!-- The contact has been added to your contact list -->
+    
+                <!-- Your quote has been sent -->
+            
+           <!-- <div class="modal__container" role="dialog" aria-modal="true" >
+            <button class="close-modal" data-micromodal-close="modal-buyer-seller" value="close"><img src="images/close-icon.svg" alt="close icon"></button>
+            <h2 class="modal__title">
+                Your quote has been sent
+            </h2>
+    
+      </div> -->
+    
+        <!-- Your quote has been sent -->
+    
+            
+    
+    </div>
+    </div>
+    <!-- Modal -->
+    
+    
+    <!-- <div>
+      <button class="btn open-modal test-modal" data-micromodal-trigger="modal-buyer-seller" value="open">open</button>
+    </div> -->
+    
+    <script src="js/inputmask.min.js"></script>
+    <script src="js/just-validate.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="js/micromodal.min.js"></script>
+    <script src="js/main.min.js"></script>
+    </body>
+    
+    </html>
