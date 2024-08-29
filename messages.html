@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css">
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
 
@@ -102,6 +103,12 @@
           </li>
         </ul>
       </div>
+      <!-- <div class="search-container">
+        <form action="/search" method="get" class="search-form">
+            <input type="text" class="search-input" placeholder="Поиск..." name="query" required>
+            <button type="submit" class="search-button">search</button>
+        </form>
+    </div> -->
       <div class="bottom-content">
         <div class="sidebar-bottom">
           <!-- Logged Out  -->
@@ -145,10 +152,20 @@
   
       <div class="container">
         <div class="main-section message-section">
-            <h1 class="page-title">Messages</h1>
+            
+            <div class="section-header">
+                <h1 class="page-title">Messages</h1>
+                <div class="search-container">
+                  <form action="/search" method="get" class="search-form form">
+                    <button type="submit" class="search-button"> <img src="images/search_icon.svg" alt="search"></button>
+                      <input type="text" class="search-input" placeholder="Enter search request" name="query" required>
+                      
+                  </form>
+              </div>
+              </div>
           <div class="tab-box">
-            <button class="tab__btn ">New <span class="counter">3</span></button>
-            <button class="tab__btn active">All <span class="counter">12</span></button>
+            <button data-content="0" class="tab__btn active">New <span class="counter">3</span></button>
+            <button data-content="1" class="tab__btn ">All <span class="counter">12</span></button>
             <div class="line"></div>
           </div>
   
@@ -1062,8 +1079,10 @@
     
     <script src="js/inputmask.min.js"></script>
     <script src="js/just-validate.production.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script> -->
     <script src="js/micromodal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
     <script src="js/main.min.js"></script>
     </body>
     
