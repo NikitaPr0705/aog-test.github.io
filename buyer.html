@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css">
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
 
@@ -103,6 +104,12 @@
         </li>
       </ul>
     </div>
+    <!-- <div class="search-container">
+      <form action="/search" method="get" class="search-form">
+          <input type="text" class="search-input" placeholder="Поиск..." name="query" required>
+          <button type="submit" class="search-button">search</button>
+      </form>
+  </div> -->
     <div class="bottom-content">
       <div class="sidebar-bottom">
         <!-- Logged Out  -->
@@ -147,11 +154,21 @@
 
       <div class="container">
         <div class="main-section">
-          <h1 class="page-title">RFQ</h1>
+          <div class="section-header">
+            <h1 class="page-title">RFQ</h1>
+            <div class="search-container">
+              <form action="/search" method="get" class="search-form form">
+                <button type="submit" class="search-button"> <img src="images/search_icon.svg" alt="search"></button>
+                  <input type="text" class="search-input" placeholder="Enter search request" name="query" required>
+                  
+              </form>
+          </div>
+          </div>
+          
           <div class="tab-box">
             <div class="tab-wrapper">
-            <button class="tab__btn active">RFQ <span class="counter">18</span></button>
-            <button class="tab__btn ">Quote <span class="counter">3</span></button>
+            <button data-content="0" class="tab__btn active">RFQ <span class="counter">18</span></button>
+            <button data-content="1" class="tab__btn ">Quote <span class="counter">3</span></button>
         </div>
         <div class="card__buttons">
             <button class="btn btn--border"><img src="images/plus-icon.svg" alt="Create RFQ icon"> Create RFQ</button>
@@ -644,11 +661,242 @@
                   <button class="btn btn--border color--red d-toggle close-card"><img src="images/cancel-icon.svg" alt="Cancel icon"> Cancel</button>
                 </div>
               </div>
+
+              <div class="card no-buttons">
+          
+                <div class="card__info grid-cols">
+               
+                  <div class="card__info-item">
+                    <div class="info-wrapper">
+                    <h4 class="item-title">Part Number</h4>
+                    <p class="item-text">2.5832.15531.25CTO</p>
+                  </div>
+                  </div>
+                  <div class="card__info-item">
+                    <div class="info-wrapper">
+                    <h4 class="item-title">Description</h4>
+                    <p class="item-text">Rolls-Royce engine</p>
+                  </div>
+                  </div>
+                  <div class="card__info-item">
+                      <div class="info-wrapper">
+                      <h4 class="item-title">Quantity</h4>
+                      <p class="item-text">2</p>
+                    </div>
+                    </div>
+                  <div class="card__info-item">
+                    <div class="info-wrapper">
+                    <h4 class="item-title">place for delivery</h4>
+                    <p class="item-text">Munich</p>
+                  </div>
+                  </div>
+               
+                  <div class="card__info-item notes">
+                    <div class="info-wrapper">
+                    <h4 class="item-title">Notes</h4>
+                    <p class="item-text">Should be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. Quam in neque sed donec massa sit at pharetra cras.Should be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. QuamShould be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. QuamShould be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. QuamShould be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. Quam</p>
+                  </div>
+                  </div>
+                  <div class="card__info-item price-item">
+                    <div class="info-wrapper">
+                    <h4 class="item-title">Price</h4>
+                    <p class="item-text">99,518,145 €</p>
+                  </div>
+                  </div>
+                  <div class="card__info-item date-col">
+                    <div class="info-wrapper">
+                    <h4 class="item-title">Date</h4>
+                    <p class="item-text">11.07.2024</p>
+                  </div>
+                  </div>
+             
+                </div>
+    
+                <div class="card__buttons">
+                  <button class="btn secondary-btn d-toggle open-modal" data-micromodal-trigger="modal-accept-quote" value="open"><img src="images/check-white-icon.svg" alt="accept icon"> Accept Quote</button>
+                  <button class="btn btn--border d-toggle open-modal" data-micromodal-trigger="modal-contact-added" value="open"><img src="images/plus-icon.svg" alt="add icon"> Add Contact to List</button>
+                  <button class="btn btn--border d-toggle open-modal" data-micromodal-trigger="modal-send-message" value="open"><img src="images/conversation-icon.svg" alt="conversation icon">Message</button>
+                  <button class="btn btn--border color--red d-toggle close-card"><img src="images/cancel-icon.svg" alt="Cancel icon"> Cancel</button>
+                </div>
+              </div>
+              <div class="card no-buttons">
+          
+                <div class="card__info grid-cols">
+               
+                  <div class="card__info-item">
+                    <div class="info-wrapper">
+                    <h4 class="item-title">Part Number</h4>
+                    <p class="item-text">2.5832.15531.25CTO</p>
+                  </div>
+                  </div>
+                  <div class="card__info-item">
+                    <div class="info-wrapper">
+                    <h4 class="item-title">Description</h4>
+                    <p class="item-text">Rolls-Royce engine</p>
+                  </div>
+                  </div>
+                  <div class="card__info-item">
+                      <div class="info-wrapper">
+                      <h4 class="item-title">Quantity</h4>
+                      <p class="item-text">2</p>
+                    </div>
+                    </div>
+                  <div class="card__info-item">
+                    <div class="info-wrapper">
+                    <h4 class="item-title">place for delivery</h4>
+                    <p class="item-text">Munich</p>
+                  </div>
+                  </div>
+               
+                  <div class="card__info-item notes">
+                    <div class="info-wrapper">
+                    <h4 class="item-title">Notes</h4>
+                    <p class="item-text">Should be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. Quam in neque sed donec massa sit at pharetra cras.Should be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. QuamShould be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. QuamShould be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. QuamShould be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. Quam</p>
+                  </div>
+                  </div>
+                  <div class="card__info-item price-item">
+                    <div class="info-wrapper">
+                    <h4 class="item-title">Price</h4>
+                    <p class="item-text">99,518,145 €</p>
+                  </div>
+                  </div>
+                  <div class="card__info-item date-col">
+                    <div class="info-wrapper">
+                    <h4 class="item-title">Date</h4>
+                    <p class="item-text">11.07.2024</p>
+                  </div>
+                  </div>
+             
+                </div>
+    
+                <div class="card__buttons">
+                  <button class="btn secondary-btn d-toggle open-modal" data-micromodal-trigger="modal-accept-quote" value="open"><img src="images/check-white-icon.svg" alt="accept icon"> Accept Quote</button>
+                  <button class="btn btn--border d-toggle open-modal" data-micromodal-trigger="modal-contact-added" value="open"><img src="images/plus-icon.svg" alt="add icon"> Add Contact to List</button>
+                  <button class="btn btn--border d-toggle open-modal" data-micromodal-trigger="modal-send-message" value="open"><img src="images/conversation-icon.svg" alt="conversation icon">Message</button>
+                  <button class="btn btn--border color--red d-toggle close-card"><img src="images/cancel-icon.svg" alt="Cancel icon"> Cancel</button>
+                </div>
+              </div>
+              <div class="card no-buttons">
+          
+                <div class="card__info grid-cols">
+               
+                  <div class="card__info-item">
+                    <div class="info-wrapper">
+                    <h4 class="item-title">Part Number</h4>
+                    <p class="item-text">2.5832.15531.25CTO</p>
+                  </div>
+                  </div>
+                  <div class="card__info-item">
+                    <div class="info-wrapper">
+                    <h4 class="item-title">Description</h4>
+                    <p class="item-text">Rolls-Royce engine</p>
+                  </div>
+                  </div>
+                  <div class="card__info-item">
+                      <div class="info-wrapper">
+                      <h4 class="item-title">Quantity</h4>
+                      <p class="item-text">2</p>
+                    </div>
+                    </div>
+                  <div class="card__info-item">
+                    <div class="info-wrapper">
+                    <h4 class="item-title">place for delivery</h4>
+                    <p class="item-text">Munich</p>
+                  </div>
+                  </div>
+               
+                  <div class="card__info-item notes">
+                    <div class="info-wrapper">
+                    <h4 class="item-title">Notes</h4>
+                    <p class="item-text">Should be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. Quam in neque sed donec massa sit at pharetra cras.Should be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. QuamShould be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. QuamShould be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. QuamShould be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. Quam</p>
+                  </div>
+                  </div>
+                  <div class="card__info-item price-item">
+                    <div class="info-wrapper">
+                    <h4 class="item-title">Price</h4>
+                    <p class="item-text">99,518,145 €</p>
+                  </div>
+                  </div>
+                  <div class="card__info-item date-col">
+                    <div class="info-wrapper">
+                    <h4 class="item-title">Date</h4>
+                    <p class="item-text">11.07.2024</p>
+                  </div>
+                  </div>
+             
+                </div>
+    
+                <div class="card__buttons">
+                  <button class="btn secondary-btn d-toggle open-modal" data-micromodal-trigger="modal-accept-quote" value="open"><img src="images/check-white-icon.svg" alt="accept icon"> Accept Quote</button>
+                  <button class="btn btn--border d-toggle open-modal" data-micromodal-trigger="modal-contact-added" value="open"><img src="images/plus-icon.svg" alt="add icon"> Add Contact to List</button>
+                  <button class="btn btn--border d-toggle open-modal" data-micromodal-trigger="modal-send-message" value="open"><img src="images/conversation-icon.svg" alt="conversation icon">Message</button>
+                  <button class="btn btn--border color--red d-toggle close-card"><img src="images/cancel-icon.svg" alt="Cancel icon"> Cancel</button>
+                </div>
+              </div>
+              <div class="card no-buttons">
+          
+                <div class="card__info grid-cols">
+               
+                  <div class="card__info-item">
+                    <div class="info-wrapper">
+                    <h4 class="item-title">Part Number</h4>
+                    <p class="item-text">2.5832.15531.25CTO</p>
+                  </div>
+                  </div>
+                  <div class="card__info-item">
+                    <div class="info-wrapper">
+                    <h4 class="item-title">Description</h4>
+                    <p class="item-text">Rolls-Royce engine</p>
+                  </div>
+                  </div>
+                  <div class="card__info-item">
+                      <div class="info-wrapper">
+                      <h4 class="item-title">Quantity</h4>
+                      <p class="item-text">2</p>
+                    </div>
+                    </div>
+                  <div class="card__info-item">
+                    <div class="info-wrapper">
+                    <h4 class="item-title">place for delivery</h4>
+                    <p class="item-text">Munich</p>
+                  </div>
+                  </div>
+               
+                  <div class="card__info-item notes">
+                    <div class="info-wrapper">
+                    <h4 class="item-title">Notes</h4>
+                    <p class="item-text">Should be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. Quam in neque sed donec massa sit at pharetra cras.Should be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. QuamShould be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. QuamShould be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. QuamShould be packed on palette and moagittis facilisis egestas aliquam id odio. Faucibus ultricies donec donec donec condimentum. Urna vel mi adipiscing tortor dictumst elit ultrices. Aenean nisl enim viverra ac elit duis fames in. Quam</p>
+                  </div>
+                  </div>
+                  <div class="card__info-item price-item">
+                    <div class="info-wrapper">
+                    <h4 class="item-title">Price</h4>
+                    <p class="item-text">99,518,145 €</p>
+                  </div>
+                  </div>
+                  <div class="card__info-item date-col">
+                    <div class="info-wrapper">
+                    <h4 class="item-title">Date</h4>
+                    <p class="item-text">11.07.2024</p>
+                  </div>
+                  </div>
+             
+                </div>
+    
+                <div class="card__buttons">
+                  <button class="btn secondary-btn d-toggle open-modal" data-micromodal-trigger="modal-accept-quote" value="open"><img src="images/check-white-icon.svg" alt="accept icon"> Accept Quote</button>
+                  <button class="btn btn--border d-toggle open-modal" data-micromodal-trigger="modal-contact-added" value="open"><img src="images/plus-icon.svg" alt="add icon"> Add Contact to List</button>
+                  <button class="btn btn--border d-toggle open-modal" data-micromodal-trigger="modal-send-message" value="open"><img src="images/conversation-icon.svg" alt="conversation icon">Message</button>
+                  <button class="btn btn--border color--red d-toggle close-card"><img src="images/cancel-icon.svg" alt="Cancel icon"> Cancel</button>
+                </div>
+              </div>
         
            </div>
          </div>
     
         </div>
+        <div class="pagination-controls">
+      </div>
         <div class="bottom-logo">
           <picture>
             <img src="images/aog_footer-logo.svg" alt="bottom logo" />
@@ -1151,8 +1399,10 @@
     
     <script src="js/inputmask.min.js"></script>
     <script src="js/just-validate.production.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script> -->
     <script src="js/micromodal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
     <script src="js/main.min.js"></script>
     </body>
     
