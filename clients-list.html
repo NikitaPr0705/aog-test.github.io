@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css">
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
 
@@ -102,6 +103,12 @@
           </li>
         </ul>
       </div>
+      <!-- <div class="search-container">
+        <form action="/search" method="get" class="search-form">
+            <input type="text" class="search-input" placeholder="Поиск..." name="query" required>
+            <button type="submit" class="search-button">search</button>
+        </form>
+    </div> -->
       <div class="bottom-content">
         <div class="sidebar-bottom">
           <!-- Logged Out  -->
@@ -146,10 +153,20 @@
   
       <div class="container">
         <div class="main-section">
-          <h1 class="page-title">Clients</h1>
+          
+          <div class="section-header">
+            <h1 class="page-title">Clients</h1>
+            <div class="search-container">
+              <form action="/search" method="get" class="search-form form">
+                <button type="submit" class="search-button"> <img src="images/search_icon.svg" alt="search"></button>
+                  <input type="text" class="search-input" placeholder="Enter search request" name="query" required>
+                  
+              </form>
+          </div>
+          </div>
           <div class="tab-box">
-            <button class="tab__btn active">My Clients <span class="counter">10</span></button>
-            <button class="tab__btn">All clients <span class="counter">4</span></button>
+            <button data-content="0" class="tab__btn active">My Clients <span class="counter">10</span></button>
+            <button data-content="1" class="tab__btn">All clients <span class="counter">4</span></button>
             <div class="line"></div>
           </div>
   
@@ -231,7 +248,191 @@
                 <button class="btn btn--border color--red"><img src="images/remove-icon.svg" alt="remove icon"> Remove from list</button>
               </div>
              </div>
-       
+             <div class="card">
+              <picture>
+                <img src="images/ethihad-icon.svg" alt="card image">
+              </picture>
+              <div class="card__info">
+                <div class="card__info-item">
+                  <div class="info-wrapper">
+                  <h4 class="item-title">Company name</h4>
+                  <p class="item-text">Etihad</p>
+                </div>
+                </div>
+                <div class="card__info-item">
+                  <div class="info-wrapper">
+                  <h4 class="item-title">Total requests</h4>
+                  <p class="item-text">15</p>
+                </div>
+                </div>
+                <div class="card__info-item">
+                  <div class="info-wrapper">
+                  <h4 class="item-title">Open Requests</h4>
+                  <p class="item-text">3</p>
+                </div>
+                </div>
+                <div class="card__info-item">
+                  <div class="info-wrapper">
+                  <h4 class="item-title">Closed requests</h4>
+                  <p class="item-text">12</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="card__buttons">
+              <button class="btn btn--border"><img src="images/conversation-icon.svg" alt="Conversation icon"> Conversation</button>
+              <button class="btn btn--border color--red"><img src="images/remove-icon.svg" alt="remove icon"> Remove from list</button>
+            </div>
+           </div>
+     
+           <div class="card">
+            <picture>
+              <img src="images/ethihad-icon.svg" alt="card image">
+            </picture>
+            <div class="card__info">
+              <div class="card__info-item">
+                <div class="info-wrapper">
+                <h4 class="item-title">Company name</h4>
+                <p class="item-text">Etihad</p>
+              </div>
+              </div>
+              <div class="card__info-item">
+                <div class="info-wrapper">
+                <h4 class="item-title">Total requests</h4>
+                <p class="item-text">15</p>
+              </div>
+              </div>
+              <div class="card__info-item">
+                <div class="info-wrapper">
+                <h4 class="item-title">Open Requests</h4>
+                <p class="item-text">3</p>
+              </div>
+              </div>
+              <div class="card__info-item">
+                <div class="info-wrapper">
+                <h4 class="item-title">Closed requests</h4>
+                <p class="item-text">12</p>
+              </div>
+              </div>
+          </div>
+
+          <div class="card__buttons">
+            <button class="btn btn--border"><img src="images/conversation-icon.svg" alt="Conversation icon"> Conversation</button>
+            <button class="btn btn--border color--red"><img src="images/remove-icon.svg" alt="remove icon"> Remove from list</button>
+          </div>
+         </div>
+   
+         <div class="card">
+          <picture>
+            <img src="images/ethihad-icon.svg" alt="card image">
+          </picture>
+          <div class="card__info">
+            <div class="card__info-item">
+              <div class="info-wrapper">
+              <h4 class="item-title">Company name</h4>
+              <p class="item-text">Etihad</p>
+            </div>
+            </div>
+            <div class="card__info-item">
+              <div class="info-wrapper">
+              <h4 class="item-title">Total requests</h4>
+              <p class="item-text">15</p>
+            </div>
+            </div>
+            <div class="card__info-item">
+              <div class="info-wrapper">
+              <h4 class="item-title">Open Requests</h4>
+              <p class="item-text">3</p>
+            </div>
+            </div>
+            <div class="card__info-item">
+              <div class="info-wrapper">
+              <h4 class="item-title">Closed requests</h4>
+              <p class="item-text">12</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="card__buttons">
+          <button class="btn btn--border"><img src="images/conversation-icon.svg" alt="Conversation icon"> Conversation</button>
+          <button class="btn btn--border color--red"><img src="images/remove-icon.svg" alt="remove icon"> Remove from list</button>
+        </div>
+       </div>
+ 
+       <div class="card">
+        <picture>
+          <img src="images/ethihad-icon.svg" alt="card image">
+        </picture>
+        <div class="card__info">
+          <div class="card__info-item">
+            <div class="info-wrapper">
+            <h4 class="item-title">Company name</h4>
+            <p class="item-text">Etihad</p>
+          </div>
+          </div>
+          <div class="card__info-item">
+            <div class="info-wrapper">
+            <h4 class="item-title">Total requests</h4>
+            <p class="item-text">15</p>
+          </div>
+          </div>
+          <div class="card__info-item">
+            <div class="info-wrapper">
+            <h4 class="item-title">Open Requests</h4>
+            <p class="item-text">3</p>
+          </div>
+          </div>
+          <div class="card__info-item">
+            <div class="info-wrapper">
+            <h4 class="item-title">Closed requests</h4>
+            <p class="item-text">12</p>
+          </div>
+          </div>
+      </div>
+
+      <div class="card__buttons">
+        <button class="btn btn--border"><img src="images/conversation-icon.svg" alt="Conversation icon"> Conversation</button>
+        <button class="btn btn--border color--red"><img src="images/remove-icon.svg" alt="remove icon"> Remove from list</button>
+      </div>
+     </div>
+
+     <div class="card">
+      <picture>
+        <img src="images/ethihad-icon.svg" alt="card image">
+      </picture>
+      <div class="card__info">
+        <div class="card__info-item">
+          <div class="info-wrapper">
+          <h4 class="item-title">Company name</h4>
+          <p class="item-text">Etihad</p>
+        </div>
+        </div>
+        <div class="card__info-item">
+          <div class="info-wrapper">
+          <h4 class="item-title">Total requests</h4>
+          <p class="item-text">15</p>
+        </div>
+        </div>
+        <div class="card__info-item">
+          <div class="info-wrapper">
+          <h4 class="item-title">Open Requests</h4>
+          <p class="item-text">3</p>
+        </div>
+        </div>
+        <div class="card__info-item">
+          <div class="info-wrapper">
+          <h4 class="item-title">Closed requests</h4>
+          <p class="item-text">12</p>
+        </div>
+        </div>
+    </div>
+
+    <div class="card__buttons">
+      <button class="btn btn--border"><img src="images/conversation-icon.svg" alt="Conversation icon"> Conversation</button>
+      <button class="btn btn--border color--red"><img src="images/remove-icon.svg" alt="remove icon"> Remove from list</button>
+    </div>
+   </div>
+
             </div>
           </div>
           <div class="content">
@@ -277,6 +478,9 @@
          </div>
     
         </div>
+        <div class="pagination-controls">
+
+      </div>
         <div class="bottom-logo">
             <picture>
             <img src="images/aog_footer-logo.svg" alt="bottom logo" />
@@ -779,8 +983,10 @@
     
     <script src="js/inputmask.min.js"></script>
     <script src="js/just-validate.production.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script> -->
     <script src="js/micromodal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
     <script src="js/main.min.js"></script>
     </body>
     
